@@ -11,4 +11,5 @@ This repository contains open source code for the Relational Abilities Index Plu
 1. Add randomisation for the position of "Yes"/"No" buttons (should take 2 minutes)
 2. Increase number of possible stimuli drawn from arrays (not necessary, but might be nice)
 3. Add R script for extracting data from .sqlite folder (already have implementation, just need to generalise it for this)
+4. Add css styling (very bare bones at the moment)
 
