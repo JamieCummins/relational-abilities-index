@@ -1,0 +1,13 @@
+block,trial_num,relation_1,relation_2,q_stim_1_id,q_stim_2_id,q_rel,q_stim_3_id,q_stim_4_id,correct_response
+5,56,is the same as,is the same as,1,2,the same as,3,4,yes
+5,57,is opposite to,is opposite to,2,1,different to,3,4,no
+5,58,comes before,comes before,1,2,the same as,3,4,yes
+5,59,comes before,comes before,2,1,different to,3,4,no
+5,60,is the same as,is opposite to,1,2,the same as,3,4,no
+5,61,is opposite to,is the same as,2,1,different to,3,4,yes
+5,62,comes after,comes before,1,2,the same as,3,4,no
+5,63,comes after,comes before,2,1,different to,3,4,no
+5,64,is more than,is more than,1,2,the same as,3,4,yes
+5,65,is less than,is less than,2,1,the same as,3,4,no
+5,66,is more than,is less than,1,2,the same as,3,4,no
+5,67,is less than,is more than,1,2,the same as,3,4,no

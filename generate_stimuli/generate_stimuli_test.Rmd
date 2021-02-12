@@ -1,0 +1,45 @@
+---
+title: "generate_stimuli"
+author: "Jamie Cummins"
+date: "2/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+library(tidyverse)
+
+stimuli <- read_csv("removed_real_words.csv")
+
+split_stimuli <- stimuli %>%
+  mutate(value = sample(c("stimulus_1", "stimulus_2", "stimulus_3", "stimulus_4"), nrow(.), replace = TRUE),
+         stimulus = paste("'", stimulus, "',", sep = "")) %>%
+  distinct(stimulus, .keep_all = TRUE)
+
+stimulus_1 <- split_stimuli %>% filter(value == "stimulus_1") %>%
+  select(stimulus) %>%
+  t() %>%
+  toupper() %>%
+  write("stimuli_1.txt")
+stimulus_2 <- split_stimuli %>% filter(value == "stimulus_2") %>%
+  select(stimulus) %>%
+  t() %>%
+  toupper() %>%
+  write("stimuli_2.txt")
+stimulus_3 <- split_stimuli %>% filter(value == "stimulus_3") %>%
+  select(stimulus) %>%
+  t() %>%
+  toupper() %>%
+  write("stimuli_3.txt")
+stimulus_4 <- split_stimuli %>% filter(value == "stimulus_4") %>%
+  select(stimulus) %>%
+  t() %>%
+  toupper() %>%
+  write("stimuli_4.txt")
+
+
+```
