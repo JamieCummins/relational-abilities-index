@@ -1,0 +1,129 @@
+block;trial_num;relation_1;relation_2;q_stim_1_id;q_stim_2_id;q_rel;q_stim_3_id;q_stim_4_id;correct_response;stim_1_id;relation_1_verb;relation_1_place;relation_1_time;stim_2_id;relation_2_verb;relation_2_place;relation_2_time;switch_1;switch_2_stim_1_id;switch_2_verb;switch_2_stim_2_id;switch_2_and;switch_2_if;q_rel_place;q_rel_time;meta_relation_1;meta_stim_1_id;meta_relation_2;meta_stim_2_id;stim_3_id;stim_4_id;stim_5_id;relation_3;stim_6_id;stim_7_id;relation_4;stim_8_id;q_word
+1;1;is hetzelfde als;is hetzelfde als;1;3;hetzelfde als;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+1;2;is hetzelfde als;is hetzelfde als;3;1;het tegenovergestelde van;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+1;3;is hetzelfde als;is het tegenovergestelde van;1;3;hetzelfde als;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+1;4;is hetzelfde als;is het tegenovergestelde van;3;1;het tegenovergestelde van;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+1;5;is het tegenovergestelde van;is het tegenovergestelde van;1;3;hetzelfde als;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+1;6;is het tegenovergestelde van;is het tegenovergestelde van;3;1;het tegenovergestelde van;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+1;7;is hetzelfde als;is het tegenovergestelde van;1;4;hetzelfde als;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;;;;Is
+1;8;is hetzelfde als;is het tegenovergestelde van;4;1;het tegenovergestelde van;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;;;;Is
+1;9;is het tegenovergestelde van;is hetzelfde als;1;4;hetzelfde als;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is het tegenovergestelde van;4;;;;Is
+1;10;is het tegenovergestelde van;is hetzelfde als;4;1;het tegenovergestelde van;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is het tegenovergestelde van;4;;;;Is
+1;11;is het tegenovergestelde van;is het tegenovergestelde van;1;4;hetzelfde als;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is het tegenovergestelde van;4;;;;Is
+1;12;is het tegenovergestelde van;is het tegenovergestelde van;4;1;het tegenovergestelde van;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is het tegenovergestelde van;4;;;;Is
+1;13;is het tegenovergestelde van;is hetzelfde als;1;5;hetzelfde als;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is het tegenovergestelde van;4;4;is hetzelfde als;5;Is
+1;14;is het tegenovergestelde van;is hetzelfde als;5;1;het tegenovergestelde van;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is het tegenovergestelde van;4;4;is hetzelfde als;5;Is
+1;15;is hetzelfde als;is het tegenovergestelde van;1;5;hetzelfde als;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;4;is het tegenovergestelde van;5;Is
+1;16;is hetzelfde als;is het tegenovergestelde van;5;1;het tegenovergestelde van;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;4;is het tegenovergestelde van;5;Is
+2;17;is hetzelfde als;is hetzelfde als;3;1;hetzelfde als;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+2;18;is hetzelfde als;is hetzelfde als;1;3;anders dan;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+2;19;is hetzelfde als;is anders dan;3;1;hetzelfde als;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+2;20;is hetzelfde als;is anders dan;1;3;anders dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+2;21;is anders dan;is hetzelfde als;3;1;hetzelfde als;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+2;22;is anders dan;is hetzelfde als;1;3;anders dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+2;23;is hetzelfde als;is anders dan;4;1;hetzelfde als;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;;;;Is
+2;24;is hetzelfde als;is anders dan;1;4;anders dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;;;;Is
+2;25;is hetzelfde als;is hetzelfde als;1;4;hetzelfde als;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is anders dan;4;;;;Is
+2;26;is hetzelfde als;is hetzelfde als;4;1;anders dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is anders dan;4;;;;Is
+2;27;is hetzelfde als;is hetzelfde als;5;1;hetzelfde als;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is anders dan;4;4;is hetzelfde als;5;Is
+2;28;is hetzelfde als;is hetzelfde als;1;5;anders dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is anders dan;4;4;is hetzelfde als;5;Is
+2;29;is hetzelfde als;is anders dan;5;1;hetzelfde als;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;4;is hetzelfde als;5;Is
+2;30;is hetzelfde als;is anders dan;1;5;hetzelfde als;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;4;is hetzelfde als;5;Is
+2;31;is hetzelfde als;is anders dan;5;1;anders dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;4;is hetzelfde als;5;Is
+2;32;is hetzelfde als;is anders dan;1;5;anders dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is hetzelfde als;4;4;is hetzelfde als;5;Is
+3;33;is meer dan;is meer dan;1;3;meer dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+3;34;is meer dan;is meer dan;3;1;minder dan;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+3;35;is meer dan;is minder dan;1;3;meer dan;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;;;;;;;Is
+3;36;is meer dan;is minder dan;3;1;minder dan;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;;;;;;;Is
+3;37;is minder dan;is minder dan;1;3;meer dan;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+3;38;is minder dan;is minder dan;3;1;minder dan;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+3;39;is meer dan;is minder dan;1;4;meer dan;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;is meer dan;4;;;;Is
+3;40;is meer dan;is minder dan;4;1;minder dan;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;is meer dan;4;;;;Is
+3;41;is minder dan;is meer dan;1;4;meer dan;;;no;;;;;;;;;;;;;;;;;;;;;3;2;4;is meer dan;3;;;;Is
+3;42;is minder dan;is meer dan;4;1;minder dan;;;no;;;;;;;;;;;;;;;;;;;;;3;2;4;is meer dan;3;;;;Is
+3;43;is minder dan;is minder dan;1;4;meer dan;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is minder dan;4;;;;Is
+3;44;is minder dan;is minder dan;4;1;minder dan;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is minder dan;4;;;;Is
+3;45;is minder dan;is meer dan;1;5;meer dan;;;no;;;;;;;;;;;;;;;;;;;;;3;2;3;is minder dan;4;5;is meer dan;4;Is
+3;46;is minder dan;is meer dan;5;1;minder dan;;;no;;;;;;;;;;;;;;;;;;;;;3;2;3;is minder dan;4;5;is meer dan;4;Is
+3;47;is meer dan;is minder dan;1;5;meer dan;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;is meer dan;4;5;is minder dan;4;Is
+3;48;is meer dan;is minder dan;5;1;minder dan;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;is meer dan;4;5;is minder dan;4;Is
+4;49;komt voor;komt voor;3;1;voor;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Komt
+4;50;komt voor;komt voor;1;3;na;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Komt
+4;51;komt na;komt na;3;1;voor;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Komt
+4;52;komt na;komt na;1;3;na;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Komt
+4;53;komt na;komt voor;3;1;voor;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;;;;;;;Komt
+4;54;komt na;komt voor;1;3;na;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;;;;;;;Komt
+4;55;komt voor;komt na;4;1;voor;;;no;;;;;;;;;;;;;;;;;;;;;3;2;3;komt voor;4;;;;Komt
+4;56;komt voor;komt na;1;4;na;;;no;;;;;;;;;;;;;;;;;;;;;3;2;3;komt voor;4;;;;Komt
+4;57;komt na;komt na;4;1;voor;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;4;komt voor;3;;;;Komt
+4;58;komt na;komt na;1;4;na;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;4;komt voor;3;;;;Komt
+4;59;komt na;komt voor;4;1;voor;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;komt na;4;;;;Komt
+4;60;komt na;komt voor;1;4;na;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;komt na;4;;;;Komt
+4;61;komt na;komt voor;5;1;voor;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;komt na;4;5;komt voor;4;Komt
+4;62;komt na;komt voor;1;5;na;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;komt na;4;5;komt voor;4;Komt
+4;63;komt voor;komt na;5;1;voor;;;no;;;;;;;;;;;;;;;;;;;;;3;2;3;komt voor;4;5;komt na;4;Komt
+4;64;komt voor;komt na;1;5;na;;;no;;;;;;;;;;;;;;;;;;;;;3;2;3;komt voor;4;5;komt na;4;Komt
+5;65;bevat;;2;1;;;;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Bevat
+5;66;zit in;;2;1;;;;yes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Bevat
+5;67;bevat;bevat;3;1;in;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Zit
+5;68;bevat;zit in;3;1;;;;no;;;;;;;;;;;;;;;;;;;;;3;2;;;;;;;Bevat
+5;69;bevat;zit in;1;3;in;;;no;;;;;;;;;;;;;;;;;;;;;3;2;;;;;;;Zit
+5;70;zit in;zit in;3;1;;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Bevat
+5;71;bevat;zit in;1;4;;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;bevat;4;;;;Bevat
+5;72;bevat;zit in;4;1;in;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;bevat;4;;;;Zit
+5;73;zit in;bevat;4;1;;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;4;bevat;3;;;;Bevat
+5;74;zit in;bevat;1;4;in;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;4;bevat;3;;;;Zit
+5;75;zit in;zit in;1;4;;;;no;;;;;;;;;;;;;;;;;;;;;2;3;4;bevat;3;;;;Bevat
+5;76;zit in;zit in;4;1;in;;;no;;;;;;;;;;;;;;;;;;;;;2;3;4;bevat;3;;;;Zit
+5;77;bevat;zit in;1;5;;;;yes;;;;;;;;;;;;;;;;;;;;;3;2;3;bevat;4;5;zit in;4;Bevat
+5;78;bevat;zit in;5;1;;;;no;;;;;;;;;;;;;;;;;;;;;3;2;3;bevat;4;4;bevat;5;Bevat
+5;79;zit in;bevat;5;1;in;;;no;;;;;;;;;;;;;;;;;;;;;3;2;4;bevat;3;5;bevat;4;Is
+5;80;zit in;zit in;1;5;in;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;4;bevat;3;5;bevat;4;Is
+6;81;is hetzelfde als;is hetzelfde als;1;2;hetzelfde als;3;4;yes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;82;is hetzelfde als;is hetzelfde als;1;2;het tegenovergestelde van;4;3;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;83;is hetzelfde als;is hetzelfde als;2;1;het tegenovergestelde van;4;3;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;84;is hetzelfde als;is het tegenovergestelde van;1;2;hetzelfde als;4;3;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;85;is hetzelfde als;is het tegenovergestelde van;2;1;het tegenovergestelde van;3;4;yes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;86;is het tegenovergestelde van;is het tegenovergestelde van;1;2;hetzelfde als;4;3;yes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;87;is het tegenovergestelde van;is het tegenovergestelde van;1;2;het tegenovergestelde van;3;4;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;88;is het tegenovergestelde van;is het tegenovergestelde van;2;1;het tegenovergestelde van;3;4;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;89;is meer dan;is meer dan;1;2;hetzelfde als;4;3;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;90;is meer dan;is meer dan;1;2;het tegenovergestelde van;3;4;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;91;is meer dan;is meer dan;2;1;het tegenovergestelde van;3;4;yes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;92;is meer dan;is minder dan;1;2;hetzelfde als;3;4;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;93;is meer dan;is minder dan;2;1;het tegenovergestelde van;4;3;yes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;94;is minder dan;is minder dan;2;1;hetzelfde als;3;4;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;95;is minder dan;is minder dan;1;2;het tegenovergestelde van;4;3;yes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+6;96;is minder dan;is minder dan;2;1;het tegenovergestelde van;4;3;no;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Is
+7;97;;;1;;;;;yes;1;is;hier;;2;is;daar;;Als hier daar is en daar hier is;;;;;;daar;;;;;;;;;;;;;;Is
+7;98;;;2;;;;;yes;1;is;hier;;2;is;daar;;Als hier daar is en daar hier is;;;;;;hier;;;;;;;;;;;;;;Is
+7;99;;;1;;;;;no;1;is;hier;nu;2;was;daar;toen;Als hier daar is en daar hier is;;;;;;hier;nu;;;;;;;;;;;;;Is
+7;100;;;1;;;;;no;1;is;hier;nu;2;was;daar;toen;Als hier daar is en daar hier is;;;;;;daar;toen;;;;;;;;;;;;;Was
+7;101;;;1;;;;;yes;1;is;hier;nu;2;was;daar;toen;Als nu toen is en toen nu is;;;;;;hier;toen;;;;;;;;;;;;;Was
+7;102;;;1;;;;;no;1;is;hier;nu;2;was;daar;toen;Als nu toen is en toen nu is;;;;;;daar;nu;;;;;;;;;;;;;Is
+7;103;;;1;;;;;yes;1;is;hier;nu;2;was;daar;toen;Als hier daar is en daar hier is;1;is;2;en;als;hier;toen;;;;;;;;;;;;;Was
+7;104;;;1;;;;;no;1;is;hier;nu;2;was;daar;toen;Als hier daar is en daar hier is;1;is;2;en;als;daar;toen;;;;;;;;;;;;;Was
+7;105;;;2;;;;;no;1;is;hier;nu;2;was;daar;toen;Als hier daar is en daar hier is;1;is;2;en;als;hier;nu;;;;;;;;;;;;;Is
+7;106;;;2;;;;;no;1;is;hier;nu;2;was;daar;toen;Als hier daar is en daar hier is;1;is;2;en;als;hier;toen;;;;;;;;;;;;;Was
+7;107;;;2;;;;;no;1;is;hier;nu;2;was;daar;toen;Als hier daar is en daar hier is;1;is;2;en;als;daar;toen;;;;;;;;;;;;;Was
+7;108;;;1;;;;;no;1;is;hier;nu;2;was;daar;toen;Als nu toen is en toen nu is;1;is;2;en;als;hier;toen;;;;;;;;;;;;;Was
+7;109;;;1;;;;;yes;1;is;hier;nu;2;was;daar;toen;Als nu toen is en toen nu is;1;is;2;en;als;daar;nu;;;;;;;;;;;;;Is
+7;110;;;1;;;;;no;1;is;hier;nu;2;was;daar;toen;Als nu toen is en toen nu is;1;is;2;en;als;daar;toen;;;;;;;;;;;;;Was
+7;111;;;2;;;;;yes;1;is;hier;nu;2;was;daar;toen;Als nu toen is en toen nu is;1;is;2;en;als;hier;toen;;;;;;;;;;;;;Was
+7;112;;;2;;;;;no;1;is;hier;nu;2;was;daar;toen;Als nu toen is en toen nu is;1;is;2;en;als;daar;toen;;;;;;;;;;;;;Was
+8;113;plus;plus;2;4;meer dan;;;no;;;;;;;;;;;;;;;;;is hetzelfde als;1;is meer dan;3;;;;;;;;;Is
+8;114;plus;plus;4;2;minder dan;;;no;;;;;;;;;;;;;;;;;is hetzelfde als;1;is meer dan;3;;;;;;;;;Is
+8;115;plus;plus;2;4;meer dan;;;yes;;;;;;;;;;;;;;;;;is hetzelfde als;1;is minder dan;3;;;;;;;;;Is
+8;116;plus;plus;4;2;minder dan;;;yes;;;;;;;;;;;;;;;;;is hetzelfde als;1;is minder dan;3;;;;;;;;;Is
+8;117;min;min;2;4;minder dan;;;no;;;;;;;;;;;;;;;;;is hetzelfde als;1;is meer dan;3;;;;;;;;;Is
+8;118;min;min;4;2;meer dan;;;no;;;;;;;;;;;;;;;;;is hetzelfde als;1;is meer dan;3;;;;;;;;;Is
+8;119;min;min;2;4;minder dan;;;yes;;;;;;;;;;;;;;;;;is hetzelfde als;1;is minder dan;3;;;;;;;;;Is
+8;120;min;min;4;2;meer dan;;;yes;;;;;;;;;;;;;;;;;is hetzelfde als;1;is minder dan;3;;;;;;;;;Is
+9;121;plus;plus;2;4;minder dan;;;no;;;;;;;;;;;;;;;;;is meer dan;1;is hetzelfde als;3;;;;;;;;;Is
+9;122;plus;plus;4;2;meer dan;;;no;;;;;;;;;;;;;;;;;is meer dan;1;is hetzelfde als;3;;;;;;;;;Is
+9;123;min;min;2;4;minder dan;;;yes;;;;;;;;;;;;;;;;;is meer dan;1;is hetzelfde als;3;;;;;;;;;Is
+9;124;min;min;4;2;meer dan;;;yes;;;;;;;;;;;;;;;;;is meer dan;1;is hetzelfde als;3;;;;;;;;;Is
+9;125;plus;plus;1;3;meer dan;;;no;;;;;;;;;;;;;;;;;is minder dan;2;is hetzelfde als;4;;;;;;;;;Is
+9;126;plus;plus;3;1;minder dan;;;no;;;;;;;;;;;;;;;;;is minder dan;2;is hetzelfde als;4;;;;;;;;;Is
+9;127;min;min;1;3;meer dan;;;no;;;;;;;;;;;;;;;;;is minder dan;2;is hetzelfde als;4;;;;;;;;;Is
+9;128;min;min;3;1;minder dan;;;no;;;;;;;;;;;;;;;;;is minder dan;2;is hetzelfde als;4;;;;;;;;;Is

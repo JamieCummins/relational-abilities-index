@@ -1,0 +1,18 @@
+block,stim_1_id,relation_1_verb,relation_1_place,relation_1_time,stim_2_id,relation_2_verb,relation_2_place,relation_2_time,switch_1,switch_2_stim_1_id,switch_2_verb,switch_2_stim_2_id,switch_2_and,switch_2_if,q_stim_1_id,q_rel_place,q_rel_time,correct_response,trial_num
+7,1,is,here,,2,is,there,,If here is there and there is here,,,,,,1,there,,yes,97
+7,1,is,here,,2,is,there,,If here is there and there is here,,,,,,2,here,,yes,98
+7,1,is,here,now,2,was,there,then,If here is there and there is here,,,,,,1,"here ",now,no,99
+7,1,is,here,now,2,was,there,then,If here is there and there is here,,,,,,1,"there ",then,no,100
+101,,THIS is an attention CHECK,,,,THIS is an attention CHECK,,,THIS is an attention CHECK,,,,,,,Please respond “yes” to this question,,yes,XXX
+7,1,is,here,now,2,was,there,then,If now is then and then is now,,,,,,1,"here ",then,yes,101
+7,1,is,here,now,2,was,there,then,If now is then and then is now,,,,,,1,"there ",now,no,102
+7,1,is,here,now,2,was,there,then,If here is there and there is here,1,is,2,and,if,1,"here ",then,yes,103
+7,1,is,here,now,2,was,there,then,If here is there and there is here,1,is,2,and,if,1,"there ",then,no,104
+7,1,is,here,now,2,was,there,then,If here is there and there is here,1,is,2,and,if,2,"here ",now,no,105
+7,1,is,here,now,2,was,there,then,If here is there and there is here,1,is,2,and,if,2,"here ",then,no,106
+7,1,is,here,now,2,was,there,then,If here is there and there is here,1,is,2,and,if,2,"there ",then,no,107
+7,1,is,here,now,2,was,there,then,If now is then and then is now,1,is,2,and,if,1,"here ",then,no,108
+7,1,is,here,now,2,was,there,then,If now is then and then is now,1,is,2,and,if,1,"there ",now,yes,109
+7,1,is,here,now,2,was,there,then,If now is then and then is now,1,is,2,and,if,1,"there ",then,no,110
+7,1,is,here,now,2,was,there,then,If now is then and then is now,1,is,2,and,if,2,"here ",then,yes,111
+7,1,is,here,now,2,was,there,then,If now is then and then is now,1,is,2,and,if,2,"there ",then,no,112

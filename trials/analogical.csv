@@ -1,0 +1,18 @@
+block,trial_num,relation_1,relation_2,q_stim_1_id,q_stim_2_id,q_rel,q_stim_3_id,q_stim_4_id,correct_response
+6,81,is the same as,is the same as,1,2,the same as,3,4,yes
+6,82,is the same as,is the same as,1,2,opposite to,4,3,no
+6,83,is the same as,is the same as,2,1,opposite to,4,3,no
+6,84,is the same as,is opposite to,1,2,the same as,4,3,no
+6,85,is the same as,is opposite to,2,1,opposite to,3,4,yes
+6,86,is opposite to,is opposite to,1,2,the same as,4,3,yes
+6,87,is opposite to,is opposite to,1,2,opposite to,3,4,no
+6,88,is opposite to,is opposite to,2,1,opposite to,3,4,no
+6,89,is more than,is more than,1,2,the same as,4,3,no
+6,90,is more than,is more than,1,2,opposite to,3,4,no
+101,XXX,,THIS is an attention CHECK,,,Please respond “yes” to this question,,,yes
+6,91,is more than,is more than,2,1,opposite to,3,4,yes
+6,92,is more than,is less than,1,2,the same as,3,4,no
+6,93,is more than,is less than,2,1,opposite to,4,3,yes
+6,94,is less than,is less than,2,1,the same as,3,4,no
+6,95,is less than,is less than,1,2,opposite to,4,3,yes
+6,96,is less than,is less than,2,1,opposite to,4,3,no
