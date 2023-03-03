@@ -119,17 +119,11 @@ block;trial_num;relation_1;relation_2;q_stim_1_id;q_stim_2_id;q_rel;q_stim_3_id;
 8;118;minus;minus;4;2;more than;;;no;;;;;;;;;;;;;;;;;is the same as;1;is more than;3;;;;;;;;;Is
 8;119;minus;minus;2;4;less than;;;yes;;;;;;;;;;;;;;;;;is the same as;1;is less than;3;;;;;;;;;Is
 8;120;minus;minus;4;2;more than;;;yes;;;;;;;;;;;;;;;;;is the same as;1;is less than;3;;;;;;;;;Is
-9;121;plus;plus;2;4;less than;;;no;;;;;;;;;;;;;;;;;is more than;1;is the same as;3;;;;;;;;;Is
-9;122;plus;plus;4;2;more than;;;no;;;;;;;;;;;;;;;;;is more than;1;is the same as;3;;;;;;;;;Is
-9;123;minus;minus;2;4;less than;;;yes;;;;;;;;;;;;;;;;;is more than;1;is the same as;3;;;;;;;;;Is
-9;124;minus;minus;4;2;more than;;;yes;;;;;;;;;;;;;;;;;is more than;1;is the same as;3;;;;;;;;;Is
-9;125;plus;plus;1;3;more than;;;no;;;;;;;;;;;;;;;;;is less than;2;is the same as;4;;;;;;;;;Is
-9;126;plus;plus;3;1;less than;;;no;;;;;;;;;;;;;;;;;is less than;2;is the same as;4;;;;;;;;;Is
-9;127;minus;minus;1;3;more than;;;no;;;;;;;;;;;;;;;;;is less than;2;is the same as;4;;;;;;;;;Is
-9;128;minus;minus;3;1;less than;;;no;;;;;;;;;;;;;;;;;is less than;2;is the same as;4;;;;;;;;;Is
-100;XXX;THIS is an attention CHECK;THIS is an attention CHECK;;;"Please respond ""yes"" to this question";;;yes;;;;;;;;;;;;;;;;;;;;;;;;THIS is an attention CHECK;;;THIS is an attention CHECK;;
-100;XXX;THIS is an attention CHECK;THIS is an attention CHECK;;;"Please respond ""no"" to this question";;;no;;;;;;;;;;;;;;;;;;;;;;;;THIS is an attention CHECK;;;THIS is an attention CHECK;;
-101;XXX;;THIS is an attention CHECK;;;Please respond “yes” to this question;;;yes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-101;XXX;;;;;;;;yes;;THIS is an attention CHECK;;;;THIS is an attention CHECK;;;THIS is an attention CHECK;;;;;;Please respond “yes” to this question;;;;;;;;;;;;;;
-101;XXX;;;;;Please respond “no” to this question;;;no;;;;;;;;;;;;;;;;;THIS is an attention CHECK;;THIS is an attention CHECK;;;;;;;;;;
-101;XXX;THIS is an attention CHECK;THIS is an attention CHECK;;;"Please respond ""no"" to this question";;;no;;;;;;;;;;;;;;;;;;;;;;;;THIS is an attention CHECK;;;THIS is an attention CHECK;;
+8;121;plus;plus;2;4;less than;;;no;;;;;;;;;;;;;;;;;is more than;1;is the same as;3;;;;;;;;;Is
+8;122;plus;plus;4;2;more than;;;no;;;;;;;;;;;;;;;;;is more than;1;is the same as;3;;;;;;;;;Is
+8;123;minus;minus;2;4;less than;;;yes;;;;;;;;;;;;;;;;;is more than;1;is the same as;3;;;;;;;;;Is
+8;124;minus;minus;4;2;more than;;;yes;;;;;;;;;;;;;;;;;is more than;1;is the same as;3;;;;;;;;;Is
+8;125;plus;plus;1;3;more than;;;no;;;;;;;;;;;;;;;;;is less than;2;is the same as;4;;;;;;;;;Is
+8;126;plus;plus;3;1;less than;;;no;;;;;;;;;;;;;;;;;is less than;2;is the same as;4;;;;;;;;;Is
+8;127;minus;minus;1;3;more than;;;no;;;;;;;;;;;;;;;;;is less than;2;is the same as;4;;;;;;;;;Is
+8;128;minus;minus;3;1;less than;;;no;;;;;;;;;;;;;;;;;is less than;2;is the same as;4;;;;;;;;;Is
