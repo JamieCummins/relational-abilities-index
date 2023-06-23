@@ -1,0 +1,250 @@
+---
+title: "processing"
+format: html
+editor: visual
+---
+
+```{r}
+
+library(threadr)
+library(Hmisc)
+library(RSQLite)
+library(jsonlite)
+library(tidyverse)
+library(janitor)
+library(pacman)
+library(knitr)
+library(kableExtra)
+library(lubridate) 
+
+# study_id <- "af"
+# assessment_type <- "ppvt"
+# timepoint <- "t1"
+
+study_id <- ""
+assessment_type <- "rai"
+timepoint <- ""
+
+# set database download location
+download_location <- 
+  paste0("../data/raw/",
+       study_id, "_", assessment_type, "_", 
+       timepoint, "_", format(Sys.Date(), "%d%m%Y"), ".sqlite")
+
+# set csv save location
+save_location <- 
+  paste0("../data/raw/",
+       study_id, "_", assessment_type, "_", 
+       timepoint, "_", format(Sys.Date(), "%d%m%Y"), ".rds")
+
+
+## login credentials 
+url <- 
+  "ftp://ftp.drjamiecumminscom.webhosting.be/www/relational-reasoning-test/data/data.sqlite"
+credentials <- 
+  "mariedelabie@drjamiecumminscom:MarieDelabie1"
+
+# download questionnaire data and save it to location
+download_ftp_file(file_remote = url,
+                  file_local = download_location,
+                  credentials = credentials)
+
+
+```
+
+```{r}
+
+# Establish SQL connection
+con <-
+  dbConnect(drv = RSQLite::SQLite(),
+            dbname = download_location)
+
+# Extract main table
+d <-
+  dbGetQuery(conn = con,
+             statement = 'SELECT * FROM labjs')
+
+# Close and discard connection
+dbDisconnect(conn = con)
+rm(con)
+
+# delete database after loading it in
+file.remove(download_location)
+
+```
+
+```{r}
+
+d.meta <-
+  map_dfr(d$metadata, fromJSON) %>% # apply JSON function to the metadata
+  dplyr::rename(unique_id = id) # rename to avoid confusion
+
+d <- d %>%
+  bind_cols(d.meta) %>%
+  dplyr::select(-metadata)
+
+count_unique <- function(x) {
+  return(length(unique(x)))
+}
+# returns how many unique observations there are in a given vector
+
+information_preserved <- function(x, length) {
+  return(count_unique(str_sub(x, end = i)) == count_unique(x))
+}
+# put in a vector and a string length
+# for that string length, the vector checks how many unique observations there are when the strings are truncated using that length
+# the function then compares this number to the number of unique observations when at full string length
+# if this number is the same (i.e., truncating the string doesn't change the number of unique observations) it returns TRUE
+
+for (i in 5:36) {
+  if (
+    information_preserved(d$session, i) &&
+    information_preserved(d$observation, i)
+  ) {
+    break()
+  }
+}
+# check if more than five characters are needed to preserve the identifying information
+# for-loop breaks as soon as both expressions are evaluated as TRUE
+
+# Truncate IDs
+d <- d %>%
+  dplyr::mutate(session = str_sub(session, end = i),
+                unique_id = str_sub(unique_id, end = i))
+
+
+# Create function that does this
+parseJSON <- function(input) {
+  return(input %>%
+           fromJSON(flatten = TRUE) %>% {
+             if (class(.) == 'list') {discard(., is.null) %>% as_tibble()}
+             else {.}
+             } %>%
+           janitor::clean_names() %>%
+           mutate_all(as.character))
+}
+
+# Get full data
+d.full <- d %>%
+  dplyr::filter(payload == 'full') %>%
+  group_by(unique_id, id) %>%
+  do({map_dfr(.$data, parseJSON)} %>%
+       bind_rows()) %>%
+  ungroup()
+
+
+d.incremental <-
+  d %>%
+  dplyr::filter(payload %in% c('incremental', 'latest')) %>%
+  group_by(unique_id, id) %>%
+  do(
+    {map_dfr(.$data, parseJSON)} %>%
+      bind_rows()
+  ) %>%
+  ungroup()
+
+# merge data sets
+d.output <-
+  d.full %>%
+  bind_rows(d.incremental %>% filter(!(unique_id %in% d.full$unique_id)))
+
+```
+
+```{r}
+
+write_rds(d.output, save_location)
+
+```
+
+# Processing
+
+```{r}
+
+library(tidyverse)
+
+raw_data <- read_rds("../data/raw/_rai__19042023.rds") |>
+  group_by(unique_id) |>
+  fill(participant_id, total_correct) |>
+  ungroup() |>
+  mutate(correct = as.logical(correct))
+
+```
+
+## get demographics
+
+```{r}
+
+demographics_data <- raw_data |>
+  dplyr::select(unique_id, age, gender) |>
+  filter(!is.na(age))
+
+```
+
+## process the rai data
+
+```{r}
+
+complete_rai_sessions <- raw_data %>%
+  filter(trial_num != "NA") %>%
+  group_by(unique_id) %>%
+  distinct(trial_num, .keep_all = TRUE) %>%
+  filter(n() == 128) %>%
+  ungroup() %>%
+  
+  # in cases where two complete sessions were present, arrange by date and keep only the first
+  group_by(participant_id) %>%
+  ungroup() %>%
+  distinct(unique_id) %>%
+  as_vector()
+
+# get proportion correct and total trials completed
+relational_task_trials_df <- raw_data %>%
+  filter(unique_id %in% complete_rai_sessions) %>%
+  filter(str_detect(sender, "_trials") & ended_on %in% c("response", "timeout")) |>
+  group_by(participant_id) %>%
+  mutate(total_correct = as.numeric(lead(total_correct)),
+         duration = as.numeric(duration),
+         correct = as.numeric(correct)) %>%
+  ungroup() %>%
+  dplyr::select(participant_id, unique_id, correct, block, correct_response, response, duration, total_correct) %>%
+  group_by(participant_id) %>%
+  mutate(n_trials_completed = n(),
+         rts_criterion = case_when(quantile(duration, .5) >= 5000 ~ 1,
+                               TRUE ~ 0)) %>%
+  mutate(trial_type = case_when(block == 1 ~ "opposition",
+                                block == 2 ~ "difference",
+                                block == 3 ~ "quantity",
+                                block == 4 ~ "temporal",
+                                block == 5 ~ "containment",
+                                block == 6 ~ "analogy",
+                                block == 7 ~ "deictic",
+                                block == 8 | block == 9 ~ "mathematical")) %>%
+  group_by(participant_id, trial_type) %>%
+  mutate(correct = case_when(is.na(correct) ~ 0,
+                             TRUE ~ correct),
+         trial_score = mean(correct)) %>%
+  ungroup()
+
+relational_task_trials_df |>
+  group_by(participant_id) |>
+  filter(n() == 128) |>
+  mutate(trial_number = row_number()) |>
+  ungroup() |>
+  dplyr::select(participant_id, unique_id, trial_number, subscale = block, correct) |>
+  mutate(subscale = case_match(subscale,
+    "1" ~ "opposition",
+    "2" ~ "difference",
+    "3" ~ "quantity",
+    "4" ~ "temporal",
+    "5" ~ "containment",
+    "6" ~ "analogy",
+    "7" ~ "deictic",
+    c("8", "9") ~ "mathematical")) |>
+  left_join(demographics_data) |>
+  dplyr::select(-unique_id) |>
+  write_csv("trial_level_rai_poc.csv")
+
+
+
+
+```

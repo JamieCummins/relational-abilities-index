@@ -17,7 +17,7 @@ block;trial_num;relation_1;relation_2;q_stim_1_id;q_stim_2_id;q_rel;q_stim_3_id;
 1;16;is the same as;is opposite to;5;1;opposite to;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is the same as;4;4;is opposite to;5;Is
 2;17;is the same as;is the same as;3;1;the same as;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
 2;18;is the same as;is the same as;1;3;different to;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
-2;19;is the same as;is different to;3;1;the same as;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
+2;19;is the same as;is different to;3;1;the same as;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
 2;20;is the same as;is different to;1;3;different to;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
 2;21;is different to;is the same as;3;1;the same as;;;no;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
 2;22;is different to;is the same as;1;3;different to;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;;;;;;;Is
@@ -25,7 +25,7 @@ block;trial_num;relation_1;relation_2;q_stim_1_id;q_stim_2_id;q_rel;q_stim_3_id;
 2;24;is the same as;is different to;1;4;different to;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is the same as;4;;;;Is
 2;25;is the same as;is the same as;1;4;the same as;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is different to;4;;;;Is
 2;26;is the same as;is the same as;4;1;different to;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is different to;4;;;;Is
-2;27;is the same as;is the same as;5;1;the same as;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is different to;4;4;is the same as;5;Is
+2;27;is the same as;is the same as;5;1;the same as;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is different to;4;4;is the same as;5;Is
 2;28;is the same as;is the same as;1;5;different to;;;yes;;;;;;;;;;;;;;;;;;;;;2;3;3;is different to;4;4;is the same as;5;Is
 2;29;is the same as;is different to;5;1;the same as;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is the same as;4;4;is the same as;5;Is
 2;30;is the same as;is different to;1;5;the same as;;;no;;;;;;;;;;;;;;;;;;;;;2;3;3;is the same as;4;4;is the same as;5;Is
