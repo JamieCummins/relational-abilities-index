@@ -9,12 +9,12 @@ block,relation_1,stim_3_id,relation_2,stim_4_id,stim_5_id,relation_3,stim_6_id,s
 1,is the same as,2,is opposite to,3,3,is the same as,4,,,,4,opposite to,1,yes,8,Is
 1,is opposite to,2,is the same as,3,3,is opposite to,4,,,,1,the same as,4,yes,9,Is
 1,is opposite to,2,is the same as,3,3,is opposite to,4,,,,4,opposite to,1,no,10,Is
-1,is opposite to,2,is opposite to,3,3,is opposite to,4,,,,1,the same as,4,yes,11,Is
-1,is opposite to,2,is opposite to,3,3,is opposite to,4,,,,4,opposite to,1,no,12,Is
+1,is opposite to,2,is opposite to,3,3,is opposite to,4,,,,1,the same as,4,no,11,Is
+1,is opposite to,2,is opposite to,3,3,is opposite to,4,,,,4,opposite to,1,yes,12,Is
 1,is opposite to,2,is the same as,3,3,is opposite to,4,4,is the same as,5,1,the same as,5,yes,13,Is
 1,is opposite to,2,is the same as,3,3,is opposite to,4,4,is the same as,5,5,opposite to,1,no,14,Is
-1,is the same as,2,is opposite to,3,3,is the same as,4,4,is opposite to,5,1,the same as,5,no,15,Is
-1,is the same as,2,is opposite to,3,3,is the same as,4,4,is opposite to,5,5,opposite to,1,yes,16,Is
+1,is the same as,2,is opposite to,3,3,is the same as,4,4,is opposite to,5,1,the same as,5,yes,15,Is
+1,is the same as,2,is opposite to,3,3,is the same as,4,4,is opposite to,5,5,opposite to,1,no,16,Is
 2,is the same as,2,is the same as,3,,,,,,,3,the same as,1,yes,17,Is
 2,is the same as,2,is the same as,3,,,,,,,1,different to,3,no,18,Is
 2,is the same as,2,is different to,3,,,,,,,3,the same as,1,yes,19,Is
@@ -78,7 +78,7 @@ block,relation_1,stim_3_id,relation_2,stim_4_id,stim_5_id,relation_3,stim_6_id,s
 5,is within,3,contains,2,4,contains,3,,,,1,within,4,yes,74,Is
 5,is within,2,is within,3,4,contains,3,,,,1,contain,4,no,75,Does
 5,is within,2,is within,3,4,contains,3,,,,4,within,1,no,76,Is
-5,contains,3,is within,2,3,contains,4,5,"is within ",4,1,contain,5,yes,77,Does
+5,contains,3,is within,2,3,contains,4,5,is within ,4,1,contain,5,yes,77,Does
 5,contains,3,is within,2,3,contains,4,4,contains,5,5,contain,1,no,78,Does
 5,is within,3,contains,2,4,contains,3,5,contains,4,5,within,1,no,79,Is
 5,is within,2,is within,3,4,contains,3,5,contains,4,1,within,5,yes,80,Is
