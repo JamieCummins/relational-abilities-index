@@ -1,6 +1,0 @@
-trial_num,statement_1,statement_2,statement_3,statement_4,statement_5,true_statements,false_statements,ku_statements,probed_truth_value,n_answers,n_true_answers,n_false_answers,n_ku_answers
-1,CUG is the same as JOM,JOM is the same as VEK,,,,VEK is the same as CUG,"VEK is opposite to CUG, CUG is opposite to JOM, JOM is opposite to CUG",,true,4,1,3,0
-2,CUG is the same as JOM,JOM is the same as VEK,,,,"VEK is the same as CUG, CUG is the same as VEK","VEK is opposite to CUG, JOM is opposite to CUG","CUG is the same as FUD, FUD is the same as CUG",false,6,2,2,2
-3,CUG is the same as JOM,JOM is the same as VEK,,,,"VEK is the same as CUG, CUG is the same as VEK","VEK is opposite to CUG, JOM is opposite to CUG","CUG is the same as FUD, FUD is the same as CUG",known unknowns,4,1,2,1
-4,DOK is more than SAF,WER is more than SAF,,,,SAF is less than DOK,"SAF is more than WER, WER is less than SAF, DOK is less than SAF",,true,4,1,3,0
-5,DOK is more than SAF,WER is more than SAF,,,,"SAF is less than DOK, SAF is less than WER",,"DOK is more than WER, WER is more than DOK",known unknowns,4,2,0,2
